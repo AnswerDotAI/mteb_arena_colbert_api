@@ -9,7 +9,6 @@ datasets = {
     "stackexchange": "./data/stackexchange_int2doc.json",
 }
 
-model = "answerdotai/AnswerAI-ColBERTv2.5-small"
 config = ColBERTConfig(
     nbits=2,
     nranks=1,
@@ -30,5 +29,5 @@ COLLECTIONS = {
 
 for dataset_name in datasets.keys():
     SEARCHERS[dataset_name] = Searcher(
-        index=f"{dataset_name}_V1_{model}", config=config
+        index=f"{dataset_name}_V1_AAIColBERT-small", config=config
     )
