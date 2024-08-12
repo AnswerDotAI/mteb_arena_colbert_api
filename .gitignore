@@ -1,0 +1,17 @@
+__pycache__
+*.pyc
+*.ipynb
+*.pkl
+*.csv
+*.json
+*.txt
+*.log
+*.md
+*.html
+*.css
+*.js
+*.png
+*.jpg
+*.jpeg
+*.gif
+.DS_Store
